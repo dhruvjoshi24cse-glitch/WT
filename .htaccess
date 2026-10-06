@@ -1,0 +1,6 @@
+DirectoryIndex index.php
+RewriteEngine On
+RewriteBase /smart-sms-admin-fees-final/smart-sms/
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^ api/index.php [L,QSA]
